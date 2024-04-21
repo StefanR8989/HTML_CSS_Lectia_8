@@ -101,12 +101,14 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
+
+  background: #2f303a66;
   background-image: linear-gradient(
       180deg,
       rgba(25, 28, 38, 0.3),
       rgba(25, 28, 38, 0.8)
     ),
-    url(/img/hero-bg-image.jpg);
+    url(/img/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -232,12 +234,12 @@ a {
 
 .services {
   background-color: var(--black);
-  background-image: radial-gradient(
-      circle at bottom left,
-      rgba(255, 108, 0, 0.2),
-      rgba(255, 108, 0, 0.3)
+  background-image: linear-gradient(
+      0deg,
+      rgba(25, 28, 38, 0.3),
+      rgba(25, 28, 38, 0.8)
     ),
-    url(/img/contact-bg-image.jpg);
+    url(/img/hero-bg-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--light-dark);
@@ -274,8 +276,7 @@ a {
     100%;
 }
 
-.services__item {
-}
+/* .services__item {} */
 
 .services__description {
   font-size: 18px;
@@ -318,17 +319,212 @@ a {
 
 /* Barbers */
 
-.barbers__card {
-  background-color: var(--white);
-  box-shadow: 0px 2px 1px 0px #00000033;
+/* Statistics section */
 
-  box-shadow: 0px 1px 1px 0px #00000024;
+.statistics .container {
+  display: flex;
+  gap: 64px;
+  padding: 180px 0;
+}
 
-  box-shadow: 0px 1px 3px 0px #0000001f;
+.statistics__list {
+  flex: 1;
+}
+
+.statistics__item {
+  background-color: #f7f7f7;
+}
+
+.statistic_value {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.statistic_value sup {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.statistics__description {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.statistics__subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.statistics__title {
+  font-family: var(--secondaryfont);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.statistics__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.statistics__testimonial {
+  flex: 1;
+}
+
+/* Barbers section style */
+
+.barbers {
+  background-color: #f7f7f7;
+  padding: 180px 0;
+}
+
+.barbers__container {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.barbers__subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 143px;
+  color: var(--light-dark);
+  text-transform: uppercase;
+}
+
+.barbers__title {
+  font-family: var(--secondaryfont);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+/* .barbers__card {} */
+
+.barbers__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.barbers__role {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--orange);
+}
+
+.barbers__social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.barbers__social li {
+  background-color: white;
+  padding: 12px;
+  border-radius: 100px;
+}
+
+.barbers__social li:hover .icon {
+  fill: var(--orange);
+}
+
+/* Place section style */
+
+.place {
+  margin: 180px 0;
+  color: var(--black);
+}
+
+.place__images {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.place__subtitle {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  margin-bottom: 44px;
+}
+
+/* contact section stlye */
+
+.contact {
+  /* color: var(--white); */
+  display: flex;
+}
+
+.contact__form {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  flex: 1;
+  background-color: var(--black);
+}
+
+.contact__info {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  padding-left: 100px;
+  flex: 1;
+  background-color: red;
+  background-color: var(--black);
+  background-image: linear-gradient (rgba(25, 28, 38, 0.3))
+      (rgba(25, 28, 38, 0.9)),
+    url(../img/contact-bg-image.jpg);
+}
+
+/* footer section */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__social-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
